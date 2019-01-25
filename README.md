@@ -1,4 +1,4 @@
-# textile-go
+# textile-opts
 
 ![banner](https://s3.amazonaws.com/textile.public/Textile_Logo_Horizontal.png)
 
