@@ -2,19 +2,21 @@
 
 set -e
 
-while getopts r:u:p: option
+while getopts r:u:p:t: option
 do
 case "${option}"
 in
 r) RELEASE=${OPTARG};;
 u) URL=${OPTARG};;
 p) IP=${OPTARG};;
+t) TOKEN=${OPTARG};;
 esac
 done
 
 [[ -z "$RELEASE" ]] && { echo "Please specify a release tag, e.g., -r v1.0.0" ; exit 1; }
 [[ -z "$URL" ]] && { echo "Please specify a public host URL, e.g., -u https://mycafe.com" ; exit 1; }
 [[ -z "$IP" ]] && { echo "Please specify a public host IP address, e.g., -p 18.144.12.134" ; exit 1; }
+[[ -z "$TOKEN" ]] && { echo "Please specify a cafe access token, e.g., -t 2GE5YWVqE...rVsncZt" ; exit 1; }
 
 # install
 wget https://github.com/textileio/textile-go/releases/download/"$RELEASE"/textile-go_"$RELEASE"_linux-amd64.tar.gz
@@ -48,3 +50,6 @@ sleep 5
 echo "version:" $(textile version)
 echo "peer   :" $(textile peer)
 echo "address:" $(textile address)
+
+textile tokens create --token="$TOKEN"
+echo "token added"
