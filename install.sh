@@ -36,6 +36,7 @@ ExecStart=/usr/local/bin/textile daemon
 Restart=always
 User=ec2-user
 Group=ec2-user
+Environment="LIBP2P_SWARM_FD_LIMIT=5000"
 [Install]
 WantedBy=multi-user.target
 EOL'
