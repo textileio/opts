@@ -47,7 +47,7 @@
 #### Initialize a new Cafe
 
 ```
-$ ./init.sh -k <key_file> -r <release_tag> -p <public_ip> -u <https_url>
+$ ./init.sh -k <key_file> -r <release_tag> -p <public_ip> -u <https_url> -t <token>
 ```
 
 #### Upgrade a Cafe
