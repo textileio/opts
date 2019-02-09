@@ -27,9 +27,12 @@ else
   source ~/.bash_profile
   cd go/src/github.com/textileio/textile-go
   git stash
+  git checkout master && git pull
   git checkout "$BRANCH" && git pull origin "$BRANCH"
-  make setup && make build
-  sudo make install
+  dep ensure && gx install
+  go build -ldflags "-w $(govvv -flags -pkg github.com/textileio/textile-go/common)" -i -o textile textile.go
+	mv textile dist/
+  sudo mv dist/textile /usr/local/bin
 
 fi
 
@@ -38,6 +41,6 @@ sudo systemctl restart textile
 
 # echo node info
 sleep 5
-echo "version:" $(textile version)
+echo $(textile version)
 echo "peer:   " $(textile peer)
 echo "address:" $(textile address)

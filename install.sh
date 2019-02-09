@@ -48,7 +48,7 @@ sudo systemctl start textile
 
 # echo new node info
 sleep 5
-echo "version:" $(textile version)
+echo $(textile version)
 echo "peer   :" $(textile peer)
 echo "address:" $(textile address)
 
