@@ -42,5 +42,5 @@ sudo systemctl restart textile
 # echo node info
 sleep 5
 echo $(textile version --git)
-echo "peer:   " $(textile peer)
-echo "address:" $(textile address)
+echo "peerID:" $(textile ipfs id)
+echo "address:" $(textile account address)

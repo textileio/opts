@@ -49,8 +49,8 @@ sudo systemctl start textile
 # echo new node info
 sleep 5
 echo $(textile version --git)
-echo "peer   :" $(textile peer)
-echo "address:" $(textile address)
+echo "peerID:" $(textile ipfs id)
+echo "address:" $(textile account address)
 
 textile tokens create --token="$TOKEN"
 echo "token added"
