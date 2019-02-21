@@ -18,7 +18,7 @@
 | --- | --- | --- | --- | --- |
 | `1a` | `18.144.12.135` | `12D3KooWGBW3LfzypK3zgV4QxdPyUm3aEuwBDMKRRpCPm9FrJvar` | [us-west-1a](https://us-west-1a.textile.cafe) | [us-west-1](https://gateway.us-west-1.textile.cafe) |
 | `1c` | `13.57.23.210` | `12D3KooWQue2dSRqnZTVvikoxorZQ5Qyyug3hV65rYnWYpYsNMRE` | [us-west-1c](https://us-west-1c.textile.cafe) | [us-west-1](https://gateway.us-west-1.textile.cafe) |
-| `beta` | `13.56.163.77` | `12D3KooWFrrmGJcQhE5h6VUvUEXdLH7gPKdWh2q4CEM62rFGcFpr` | [13.56.163.77:40601](http://13.56.163.77:40601) | [13.56.163.77:5050](http://13.56.163.77:5050) |
+| `beta` | `13.56.163.77` | `12D3KooWFrrmGJcQhE5h6VUvUEXdLH7gPKdWh2q4CEM62rFGcFpr` | [us-west-beta](https://us-west-beta.textile.cafe) | [13.56.163.77:5050](http://13.56.163.77:5050) |
 | `dev` | `54.219.142.88` | `12D3KooWLaJnBr1bqWkZCDhaFeGxKiCP91rt2gQ8rn7Lx7kcKAMY` | [54.219.142.88:40601](http://54.219.142.88:40601) | [54.219.142.88:5050](http://54.219.142.88:5050) |
 
 #### us-east-2
