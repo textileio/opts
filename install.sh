@@ -19,9 +19,9 @@ done
 [[ -z "$TOKEN" ]] && { echo "Please specify a cafe access token, e.g., -t 2GE5YWVqE...rVsncZt" ; exit 1; }
 
 # install
-wget https://github.com/textileio/textile-go/releases/download/"$RELEASE"/textile-go_"$RELEASE"_linux-amd64.tar.gz
-tar xvfz textile-go_"$RELEASE"_linux-amd64.tar.gz
-rm textile-go_"$RELEASE"_linux-amd64.tar.gz
+wget https://github.com/textileio/go-textile/releases/download/"$RELEASE"/go-textile_"$RELEASE"_linux-amd64.tar.gz
+tar xvfz go-textile_"$RELEASE"_linux-amd64.tar.gz
+rm go-textile_"$RELEASE"_linux-amd64.tar.gz
 sudo ./install.sh
 
 # init

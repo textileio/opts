@@ -16,21 +16,21 @@ done
 if [ ! -z "$RELEASE" ]; then
 
   # install from GH release
-  wget https://github.com/textileio/textile-go/releases/download/"$RELEASE"/textile-go_"$RELEASE"_linux-amd64.tar.gz
-  tar xvfz textile-go_"$RELEASE"_linux-amd64.tar.gz
-  rm textile-go_"$RELEASE"_linux-amd64.tar.gz
+  wget https://github.com/textileio/go-textile/releases/download/"$RELEASE"/go-textile_"$RELEASE"_linux-amd64.tar.gz
+  tar xvfz go-textile_"$RELEASE"_linux-amd64.tar.gz
+  rm go-textile_"$RELEASE"_linux-amd64.tar.gz
   sudo ./install.sh
 
 else
 
   # pull latest on branch, build local
   source ~/.bash_profile
-  cd go/src/github.com/textileio/textile-go
+  cd go/src/github.com/textileio/go-textile
   git stash
   git checkout master && git pull
   git checkout "$BRANCH" && git pull origin "$BRANCH"
   dep ensure && gx install
-  go build -ldflags "-w $(govvv -flags -pkg github.com/textileio/textile-go/common)" -i -o textile textile.go
+  go build -ldflags "-w $(govvv -flags -pkg github.com/textileio/go-textile/common)" -i -o textile textile.go
 	mv textile dist/
   sudo mv dist/textile /usr/local/bin
 
