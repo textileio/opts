@@ -17,4 +17,4 @@ done
 [[ -z "$IP" ]] && { echo "Please specify a public host IP address, e.g., -p 18.144.12.134" ; exit 1; }
 
 # run cmd
-ssh -i "$KEY" ec2-user@"$IP" "/bin/bash -c 'textile tokens create --token=\$TOKEN'"
+ssh -i "$KEY" ec2-user@"$IP" "textile tokens create --token=$TOKEN"
