@@ -17,7 +17,7 @@ done
 # us-west-1a (12D3KooWGBW3LfzypK3zgV4QxdPyUm3aEuwBDMKRRpCPm9FrJvar)
 ./upgrade.sh -k keys/cafe-us-west-1.pem -r "$RELEASE" -p 18.144.12.135
 
-# us-west-1c (12D3KooWQue2dSRqnZTVvikoxorZQ5Qyyug3hV65rYnWYpYsNMRE)
+# us-west-1c (12D3KooWQue2dSRqnZTVvikoxorZQ5Qyyug3hV65rYnWYpYsNMRE) 2600:1f1c:522:b00:2725:b0b3:f39d:c401
 ./upgrade.sh -k keys/cafe-us-west-1.pem -r "$RELEASE" -p 13.57.23.210
 
 ######### US East 2
