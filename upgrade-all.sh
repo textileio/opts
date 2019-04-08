@@ -14,7 +14,7 @@ done
 
 ######### US West 1
 
-# us-west-1a (12D3KooWGBW3LfzypK3zgV4QxdPyUm3aEuwBDMKRRpCPm9FrJvar)
+# us-west-1a (12D3KooWGBW3LfzypK3zgV4QxdPyUm3aEuwBDMKRRpCPm9FrJvar) 2600:1f1c:522:b01:251a:166d:8b4f:cca0
 ./upgrade.sh -k keys/cafe-us-west-1.pem -r "$RELEASE" -p 18.144.12.135
 
 # us-west-1c (12D3KooWQue2dSRqnZTVvikoxorZQ5Qyyug3hV65rYnWYpYsNMRE) 2600:1f1c:522:b00:2725:b0b3:f39d:c401
@@ -22,24 +22,24 @@ done
 
 ######### US East 2
 
-# us-east-2a (12D3KooWERmHT6g4YkrPBTmhfDLjfi8b662vFCfvBXqzcdkPGQn1)
+# us-east-2a (12D3KooWERmHT6g4YkrPBTmhfDLjfi8b662vFCfvBXqzcdkPGQn1) 2600:1f16:116:df00:f958:a4be:9e44:c4c2
 ./upgrade.sh -k keys/cafe-us-east-2.pem -r "$RELEASE" -p 18.221.167.133
 
-# us-east-2b.textile.io (12D3KooWLh9Gd4C3knv4XqCyCuaNddfEoSLXgekVJzRyC5vsjv5d)
+# us-east-2b.textile.io (12D3KooWLh9Gd4C3knv4XqCyCuaNddfEoSLXgekVJzRyC5vsjv5d) 2600:1f16:116:df01:16a6:5265:3c5:7c0d
 ./upgrade.sh -k keys/cafe-us-east-2.pem -r "$RELEASE" -p 18.224.173.65
 
 ######### EU West 3
 
-# eu-west-3a (12D3KooWDhSfXZCBVAK6SNQu7h6mfGCBJtjMS44PW5YA5YCjVmjB)
+# eu-west-3a (12D3KooWDhSfXZCBVAK6SNQu7h6mfGCBJtjMS44PW5YA5YCjVmjB) 2a05:d012:8c7:9100:2e35:f35f:61e5:bc40
 ./upgrade.sh -k keys/cafe-eu-west-3.pem -r "$RELEASE" -p 35.180.16.103
 
-# eu-west-3b (12D3KooWBCZEDkZ2VxdNYKLLUACWbXMvW9SpVbbvoFR9CtH4qJv9)
+# eu-west-3b (12D3KooWBCZEDkZ2VxdNYKLLUACWbXMvW9SpVbbvoFR9CtH4qJv9) 2a05:d012:8c7:9101:203e:36fb:7d10:6415
 ./upgrade.sh -k keys/cafe-eu-west-3.pem -r "$RELEASE" -p 35.180.35.45
 
 ######### AP Southeast 1
 
-# ap-southeast-1a (12D3KooWQ5MR9Ugz9HkVU3fYFbiWbQR4jxKJB66JoSY7nP5ShsqQ)
+# ap-southeast-1a (12D3KooWQ5MR9Ugz9HkVU3fYFbiWbQR4jxKJB66JoSY7nP5ShsqQ) 2406:da18:653:e600:e9be:145c:fc24:b155
 ./upgrade.sh -k keys/cafe-ap-southeast-1.pem -r "$RELEASE" -p 13.250.53.27
 
-# ap-southeast-1b (12D3KooWDWJ473M3fXMEcajbaGtqgr6i6SvDdh5Ru9i5ZzoJ9Qy8)
+# ap-southeast-1b (12D3KooWDWJ473M3fXMEcajbaGtqgr6i6SvDdh5Ru9i5ZzoJ9Qy8) 2406:da18:653:e601:46cd:e52e:508d:66a0
 ./upgrade.sh -k keys/cafe-ap-southeast-1.pem -r "$RELEASE" -p 3.1.49.130
