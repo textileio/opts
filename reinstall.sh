@@ -31,8 +31,7 @@ else
   git checkout "$BRANCH" && git pull origin "$BRANCH"
   dep ensure && gx install
   go build -ldflags "-w $(govvv -flags -pkg github.com/textileio/go-textile/common)" -i -o textile textile.go
-	mv textile dist/
-  sudo mv dist/textile /usr/local/bin
+  sudo mv textile /usr/local/bin
 
 fi
 
