@@ -25,12 +25,11 @@ else
 
   # pull latest on branch, build local
   source ~/.bash_profile
-  cd go/src/github.com/textileio/go-textile
+  cd ~/go-textile
   git stash
   git checkout master && git pull
   git checkout "$BRANCH" && git pull origin "$BRANCH"
-  dep ensure && gx install
-  go build -ldflags "-w $(govvv -flags -pkg github.com/textileio/go-textile/common)" -i -o textile textile.go
+  go build -ldflags "-w $(govvv -flags | sed 's/main/github.com\/textileio\/go-textile\/common/g')" -i -o textile textile.go
   sudo mv textile /usr/local/bin
 
 fi
