@@ -15,7 +15,7 @@ done
 
 [[ -z "$KEY" ]] && { echo "Please specify an SSH key, e.g., -k mykey.pem" ; exit 1; }
 [[ -z "$RELEASE" && -z "$BRANCH" ]] && { echo "Please specify a release tag or a branch, e.g., -r v1.0.0 or -b master" ; exit 1; }
-[[ -z "$IP" ]] && { echo "Please specify a public host IP address, e.g., -p 18.144.12.134" ; exit 1; }
+[[ -z "$IP" ]] && { echo "Please specify the host IP address, e.g., -p 18.144.12.134" ; exit 1; }
 
 # upload installer
 scp -i "$KEY" reinstall.sh ec2-user@"$IP":~/

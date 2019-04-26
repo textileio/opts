@@ -2,20 +2,18 @@
 
 set -e
 
-while getopts r:u:p:t: option
+while getopts r:u:t: option
 do
 case "${option}"
 in
 r) RELEASE=${OPTARG};;
 u) URL=${OPTARG};;
-p) IP=${OPTARG};;
 t) TOKEN=${OPTARG};;
 esac
 done
 
 [[ -z "$RELEASE" ]] && { echo "Please specify a release tag, e.g., -r v1.0.0" ; exit 1; }
 [[ -z "$URL" ]] && { echo "Please specify a public host URL, e.g., -u https://mycafe.com" ; exit 1; }
-[[ -z "$IP" ]] && { echo "Please specify a public host IP address, e.g., -p 18.144.12.134" ; exit 1; }
 [[ -z "$TOKEN" ]] && { echo "Please specify a cafe access token, e.g., -t 2GE5YWVqE...rVsncZt" ; exit 1; }
 
 # install
@@ -25,7 +23,7 @@ rm go-textile_"$RELEASE"_linux-amd64.tar.gz
 sudo ./install.sh
 
 # init
-textile init -s $(textile wallet init | tail -n1) --server --cafe-open --cafe-url="$URL" --cafe-public-ip="$IP" --cafe-bind-addr=0.0.0.0:40601 --gateway-bind-addr=0.0.0.0:5050 --swarm-ports=4001
+textile init -s $(textile wallet init | tail -n1) --server --cafe-open --cafe-url="$URL" --cafe-bind-addr=0.0.0.0:40601 --gateway-bind-addr=0.0.0.0:5050 --swarm-ports=4001
 
 # textile systemctl service
 sudo bash -c 'cat >/lib/systemd/system/textile.service <<EOL
