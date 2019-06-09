@@ -19,7 +19,7 @@ if [ ! -z "$RELEASE" ]; then
   wget https://github.com/textileio/go-textile/releases/download/"$RELEASE"/go-textile_"$RELEASE"_linux-amd64.tar.gz
   tar xvfz go-textile_"$RELEASE"_linux-amd64.tar.gz
   rm go-textile_"$RELEASE"_linux-amd64.tar.gz
-  sudo ./install
+  sudo ./install.sh
 
 else
 

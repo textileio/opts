@@ -20,7 +20,7 @@ done
 wget https://github.com/textileio/go-textile/releases/download/"$RELEASE"/go-textile_"$RELEASE"_linux-amd64.tar.gz
 tar xvfz go-textile_"$RELEASE"_linux-amd64.tar.gz
 rm go-textile_"$RELEASE"_linux-amd64.tar.gz
-sudo ./install
+sudo ./install.sh
 
 # init
 textile init -s $(textile wallet init | tail -n1) --server --cafe-open --cafe-url="$URL" --cafe-bind-addr=0.0.0.0:40601 --gateway-bind-addr=0.0.0.0:5050 --swarm-ports=4001

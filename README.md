@@ -18,7 +18,7 @@
 | `1c` | `13.57.23.210` | `12D3KooWQue2dSRqnZTVvikoxorZQ5Qyyug3hV65rYnWYpYsNMRE` | [us-west-1c](https://us-west-1c.textile.cafe) | [us-west-1](https://gateway.us-west-1.textile.cafe) |
 | `beta` | `13.56.163.77` | `12D3KooWFrrmGJcQhE5h6VUvUEXdLH7gPKdWh2q4CEM62rFGcFpr` | [us-west-beta](https://us-west-beta.textile.cafe) | [us-west-beta](https://us-west-beta.textile.cafe/ipfs) |
 | `dev` | `52.53.127.155` | `12D3KooWGN8VAsPHsHeJtoTbbzsGjs2LTmQZ6wFKvuPich1TYmYY` | [us-west-dev](https://us-west-dev.textile.cafe) | [us-west-dev](https://us-west-dev.textile.cafe/ipfs) |
-| `dev internal` | `54.219.142.88` | `12D3KooWLaJnBr1bqWkZCDhaFeGxKiCP91rt2gQ8rn7Lx7kcKAMY` | [54.219.142.88:40601](http://54.219.142.88:40601) | [54.219.142.88:5050](http://54.219.142.88:5050) |
+| `dev internal` | `54.219.142.88` | `12D3KooWLaJnBr1bqWkZCDhaFeGxKiCP91rt2gQ8rn7Lx7kcKAMY` | [54.219.142.88:40601](http://54.219.142.88:40601) | [54.219.142.88](http://54.219.142.88) |
 
 #### us-east-2
 
