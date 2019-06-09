@@ -18,11 +18,11 @@ done
 [[ -z "$IP" ]] && { echo "Please specify the host IP address, e.g., -p 18.144.12.134" ; exit 1; }
 
 # upload installer
-scp -i "$KEY" reinstall.sh ec2-user@"$IP":~/
+scp -i "$KEY" reinstall ec2-user@"$IP":~/
 
 # run installer
 if [ ! -z "$RELEASE" ]; then
-  echo "./reinstall.sh -r $RELEASE" | ssh -i "$KEY" ec2-user@"$IP" /bin/bash
+  echo "./reinstall -r $RELEASE" | ssh -i "$KEY" ec2-user@"$IP" /bin/bash
 else
-  echo "./reinstall.sh -b $BRANCH" | ssh -i "$KEY" ec2-user@"$IP" /bin/bash
+  echo "./reinstall -b $BRANCH" | ssh -i "$KEY" ec2-user@"$IP" /bin/bash
 fi
