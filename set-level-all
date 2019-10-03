@@ -39,7 +39,7 @@ done
 ######### AP Southeast 1
 
 # ap-southeast-1a (12D3KooWQ5MR9Ugz9HkVU3fYFbiWbQR4jxKJB66JoSY7nP5ShsqQ)
-./set-level -k keys/cafe-ap-southeast-1.pem -l "$LEVEL" -p 13.250.53.27
+./set-level -k keys/cafe-ap-southeast-1.pem -l "$LEVEL" -p 52.221.209.147
 
 # ap-southeast-1b (12D3KooWDWJ473M3fXMEcajbaGtqgr6i6SvDdh5Ru9i5ZzoJ9Qy8)
 ./set-level -k keys/cafe-ap-southeast-1.pem -l "$LEVEL" -p 3.1.49.130

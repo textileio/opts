@@ -38,7 +38,7 @@
 
 | Cafe | Swarm IPv4 | Peer | API | Gateway |
 | --- | --- | --- | --- | --- |
-| `1a` | `13.250.53.27` | `12D3KooWQ5MR9Ugz9HkVU3fYFbiWbQR4jxKJB66JoSY7nP5ShsqQ` | [ap-southeast-1a](https://ap-southeast-1a.textile.cafe) | [ap-southeast-1](https://gateway.ap-southeast-1.textile.cafe) |
+| `1a` | `52.221.209.147` | `12D3KooWQ5MR9Ugz9HkVU3fYFbiWbQR4jxKJB66JoSY7nP5ShsqQ` | [ap-southeast-1a](https://ap-southeast-1a.textile.cafe) | [ap-southeast-1](https://gateway.ap-southeast-1.textile.cafe) |
 | `1b` | `3.1.49.130` | `12D3KooWDWJ473M3fXMEcajbaGtqgr6i6SvDdh5Ru9i5ZzoJ9Qy8` | [ap-southeast-1b](https://ap-southeast-1b.textile.cafe) | [ap-southeast-1](https://gateway.ap-southeast-1.textile.cafe) |
 
 ## Usage
