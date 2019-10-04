@@ -1,4 +1,4 @@
-# textile-opts
+# opts
 
 > A handful of bash scripts for administering textile cafes
 
